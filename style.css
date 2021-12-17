@@ -1,0 +1,127 @@
+:root {
+  --primary-dark-cyan: hsl(185, 75%, 39%);
+  --primary-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --primary-dark-grayish-blue: hsl(227, 10%, 46%);
+  --neutral-dark-gray: hsl(0, 0%, 59%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--primary-dark-cyan);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  /* outline: 1px solid red; */
+  background-color: white;
+  max-width: 324px;
+  width: 100%;
+  border-radius: 15px;
+}
+.container-top-img {
+  /* outline: 1px solid blue; */
+  height: 130px;
+}
+.container-top-img img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 100%;
+  display: block;
+}
+
+.container-profile-img img {
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 70%);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 28px;
+  gap: 0.5rem;
+}
+
+.name,
+.count {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.age {
+  color: var(--primary-dark-grayish-blue);
+  margin-inline-start: 5px;
+  font-weight: 400;
+}
+
+.city {
+  color: var(--primary-dark-grayish-blue);
+  font-size: 14px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(223, 223, 223);
+}
+
+.container-social-status {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /* outline: 1px solid blue; */
+  gap: 2.75rem;
+  margin-left: 40px;
+}
+
+.description {
+  color: var(--primary-dark-grayish-blue);
+  font-size: 10px;
+  letter-spacing: 1.35px;
+  padding-top: 5px;
+}
+
+.outer-top-container,
+.outer-bottom-container {
+  position: relative;
+}
+
+.outer-top-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-800px, -730px);
+  opacity: 0.4;
+}
+
+.outer-bottom-container img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(800px, 730px);
+  opacity: 0.5;
+  z-index: -1;
+}
